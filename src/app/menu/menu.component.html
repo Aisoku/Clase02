@@ -1,0 +1,9 @@
+<br>
+<h5 style="text-align:center;">Listado de comidas</h5>
+<br>
+<span *ngIf="foodSelected.length > 0 " >Plato seleccionado:  <b>{{foodSelected}}</b></span>
+<div class="collection">
+    <a href="#!" *ngFor="let dish of dishes" class="collection-item">
+        <app-dish [dish]="dish" (showFood)="showNameFood(dish)"></app-dish>
+    </a>
+</div>
