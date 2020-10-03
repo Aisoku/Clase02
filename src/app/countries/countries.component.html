@@ -1,1 +1,6 @@
-<p>countries works!</p>
+
+<button (click)="send(selected.alpha3Code)">Click</button>
+
+<h3>{{ selected.name }}</h3>
+<pre>{{ selected | json}}</pre>
+
